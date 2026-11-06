@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+
+<body>
+  <header>
+        <h1>Contactez-nous / Inscrivez-vous</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a> |
+        <a href="apropos.html">À propos</a> |
+        <a href="blog.html">Blog</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <hr>
+      <main>
+
+    <h2>Échangeons ensemble</h2>
+
+    <p>
+        Une question, une remarque, une idée ou simplement envie
+        d'échanger ? Vous pouvez utiliser ce formulaire pour m'envoyer
+        votre message.
+    </p>
+
+    <p>
+        Les informations que vous partagez me permettent de mieux
+        comprendre votre demande et, si nécessaire, de vous répondre
+        directement par e-mail.
+    </p>
+
+    <form>
+        <fieldset>
+                <legend>1 – Vos coordonnées</legend>
+
+        <p>
+            <label for="nom">Nom</label><br>
+            <input type="text" id="nom" name="nom" required autofocus maxlength="50"
+                           placeholder="Votre nom">
+        </p>
+         <p>
+        <label for="prenom">Prénom *</label><br>
+                    <input type="text" id="prenom" name="prenom"
+                           required maxlength="50"
+                           placeholder="Votre prénom">
+        </p>
+        <p>
+                    <label for="date-naissance">Date de naissance</label><br>
+                    <input type="date" id="date-naissance" name="date_naissance">
+                </p>
+
+        <p>
+            <label for="email">Adresse e-mail</label><br>
+            <input type="email" id="email" name="email"required placeholder="exemple@email.com">
+        </p>
+
+         <p>
+                    <label for="site-web">Site web</label><br>
+                    <input type="url" id="site-web" name="site_web"
+                           value="http://www." placeholder="https://monsite.com">
+        </p>
+        <p>
+                    <label for="code-secret">Code secret</label><br>
+                    <input type="password" id="code-secret" name="code_secret"
+                           minlength="6" maxlength="20">
+                </p>
+
+        <p>
+                    <span>Genre</span><br>
+                    <input type="radio" id="homme" name="genre" value="homme" checked>
+                    <label for="homme">Homme</label>
+                    <input type="radio" id="femme" name="genre" value="femme">
+                    <label for="femme">Femme</label>
+        </p>
+         </fieldset>
+         <fieldset>
+                <legend>2 – Informations complémentaires</legend>
+
+                <p>
+                    <label for="pays">Pays</label><br>
+                    <select id="pays" name="pays">
+                        <option value="tunisie">Tunisie</option>
+                        <option value="france">France</option>
+                        <option value="algerie">Algérie</option>
+                        <option value="maroc">Maroc</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="telephone">Téléphone</label><br>
+                    <input type="tel" id="telephone" name="telephone"
+                           pattern="[0-9]{8}" placeholder="12345678">
+                </p>
+
+                <p>
+                    <label for="adresse">Adresse postale</label><br>
+                    <input type="text" id="adresse" name="adresse"
+                           placeholder="Votre adresse">
+                </p>
+
+                <p>
+                    <label for="code-postal">Code postal</label><br>
+                    <input type="text" id="code-postal" name="code_postal"
+                           value="1000" maxlength="4">
+                </p>
+
+                <p>
+                    <label for="semestre">Semestre</label><br>
+                    <select id="semestre" name="semestre">
+                        <option value="s1">S1</option>
+                        <option value="s2">S2</option>
+                        <option value="s3">S3</option>
+                        <option value="s4">S4</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="region">Région préférée</label><br>
+                    <select id="region" name="region">
+                        <option value="tunis">Tunis</option>
+                        <option value="sousse">Sousse</option>
+                        <option value="sfax">Sfax</option>
+                        <option value="djerba">Djerba</option>
+                        <option value="tozeur">Tozeur</option>
+                    </select>
+                </p>
+            </fieldset>
+             <fieldset>
+                <legend>3 – Goûts et centres d'intérêt</legend>
+
+                <p>
+                    <span>Centres d'intérêt</span><br>
+
+                    <input type="checkbox" id="culture" name="interets[]" value="culture" checked>
+                    <label for="culture">Culture</label>
+
+                    <input type="checkbox" id="gastronomie" name="interets[]" value="gastronomie">
+                    <label for="gastronomie">Gastronomie</label>
+
+                    <input type="checkbox" id="plage" name="interets[]" value="plage">
+                    <label for="plage">Plage</label>
+
+                    <input type="checkbox" id="desert" name="interets[]" value="desert">
+                    <label for="desert">Désert</label>
+
+                    <input type="checkbox" id="histoire" name="interets[]" value="histoire">
+                    <label for="histoire">Histoire</label>
+                </p>
+
+                <p>
+                    <label for="niveau-html">Niveau en HTML (0 à 100)</label><br>
+                    <input type="range" id="niveau-html" name="niveau_html"
+                           min="0" max="100" step="10" value="50">
+                </p>
+
+                <p>
+                    <label for="satisfaction">Note de satisfaction (1 à 10)</label><br>
+                    <input type="number" id="satisfaction" name="satisfaction"
+                           min="1" max="10" step="1">
+                </p>
+
+                <p>
+                    <label for="message">Message / Commentaire</label><br>
+                    <textarea id="message" name="message"
+                              rows="5" cols="40"
+                              placeholder="Écrivez ici votre message, vos questions ou vos remarques..."></textarea>
+                </p>
+            </fieldset>
+             <fieldset>
+                <legend>4 – Photo</legend>
+
+                <p>
+                    <label for="photo">Photo de profil</label><br>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </p>
+            </fieldset>
+        <p>
+            <label for="sujet">Sujet de votre message</label><br>
+            <input type="text" id="sujet" name="sujet">
+        </p>
+
+        <p>
+            <label for="demande">Votre demande concerne :</label><br>
+            <select id="demande" name="demande">
+                <option value="article">Un article</option>
+                <option value="question">Une question</option>
+                <option value="suggestion">Une suggestion</option>
+                <option value="autre">Autre</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Quels sujets vous intéressent ?</label><br>
+
+            <input type="checkbox" name="interet" value="voyage">
+            Voyage
+
+            <input type="checkbox" name="interet" value="sport">
+            Sport
+
+            <input type="checkbox" name="interet" value="technologie">
+            Technologie
+        </p>
+
+        <p>
+            <label>Comment avez-vous découvert ce blog ?</label><br>
+
+            <input type="radio" name="origine" value="internet">
+            Internet
+
+            <input type="radio" name="origine" value="ami">
+            Un ami
+
+            <input type="radio" name="origine" value="autre">
+            Autre
+        </p>
+
+        <p>
+            <label for="date">Date souhaitée</label><br>
+            <input type="date" id="date" name="date">
+        </p>
+
+        <p>
+            <label for="heure">Heure souhaitée</label><br>
+            <input type="time" id="heure" name="heure">
+        </p>
+
+        <p>
+            <label for="age">Âge</label><br>
+            <input type="number" id="age" name="age">
+        </p>
+
+        <p>
+            <label for="message">Votre message</label><br>
+            <textarea id="message" name="message"
+                      rows="6" cols="40"></textarea>
+        </p>
+
+        <p>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Effacer">
+            </p>
+
+    </form>
+
+    <hr>
+    <p>
+            <a href="index.html">&larr; Retour à l'accueil</a>
+        </p>
+
+    <p>
+        Vous pouvez aussi me contacter directement par
+        <a href="mailto:auteur@gmail.com">e-mail</a>.
+    </p>
+    </main>
+<footer>
+    <p>© 2026 Mon Blog</p>
+</footer>
+</body>
+</html>
