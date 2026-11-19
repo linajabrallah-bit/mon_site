@@ -1,36 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <link rel="stylesheet" href="css/style.css">
-<title>Mon Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Blog - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-<h1>Mon Blog Personnel</h1>
+    <header class="entete">
+        <h1>Mon Blog Personnel</h1>
+    </header>
 
-<nav>
-<a href="index.html">Accueil</a> |
-<a href="apropos.html">À propos</a> |
-<a href="blog.html">Blog</a> |
-<a href="contact.html">Contact</a>
-</nav>
-</header>
+    <nav class="navigation">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="blog.html">Blog</a>
+        <a href="produits.html">Offres</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<section>
-<h2>Bienvenue</h2>
-<p>Bienvenue sur mon blog personnel. Je partage mes passions et mes idées.</p>
+    <main>
+        <section>
+            <h2>Bienvenue sur mon espace</h2>
+            <p>Salut ! Moi c'est Lina. Je partage ici mes passions pour l'informatique, mes carnets de voyage et mes clichés photo.</p>
+            <img src="blog.jpg" alt="Bannière du blog" class="image-accueil">
+            
+            <h3>Derniers articles</h3>
+            <ul>
+                <li>Les bases du HTML/CSS</li>
+                <li>Roadtrip dans le sud tunisien</li>
+                <li>Quel objectif pour débuter en photo ?</li>
+            </ul>
+        </section>
 
-<img src="image/blog.jpg" alt="Mon blog" width="200">
-<h3>derniers articles</h3>
-<ul>
-<li>Informatique</li>
-<li>Voyage</li>
-<li>Photographie</li>
-</ul>
-</section>
+        <section>
+            <h2>Mon programme de l'année</h2>
+            <table>
+                <caption>Ce qui arrive sur le blog</caption>
+                <thead>
+                    <tr>
+                        <th>Thème</th>
+                        <th>Sujet</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Informatique</td>
+                        <td>Créer son site web</td>
+                        <td>Novembre 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Voyage</td>
+                        <td>Guide pratique pour Tozeur</td>
+                        <td>Décembre 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Photo</td>
+                        <td>Réussir ses photos de nuit</td>
+                        <td>Janvier 2027</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
-<footer>© 2026 Mon Blog</footer>
+    <footer>
+        <p>© 2026 Mon Blog. Créé pour le TP de CSS.</p>
+    </footer>
 
 </body>
 </html>
