@@ -184,3 +184,74 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
 }
+.titre-page {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mes-offres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.boite {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.boite img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.boite h3 {
+  color: #2b6cb0;
+  margin-bottom: 10px;
+}
+
+.tarif {
+  font-weight: bold;
+  color: #c53030;
+  margin: 10px 0;
+}
+
+.bouton {
+  display: inline-block;
+  background-color: #ed8936;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.bouton:hover {
+  background-color: #dd6b20;
+}
+
+@media (max-width: 600px) {
+  .mes-offres {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .boite {
+    width: 100%;
+    max-width: 350px;
+  }
+}
